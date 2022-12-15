@@ -1,0 +1,244 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color: #D3D3D3;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/wallpaperflare.com_wallpaper.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+	
+}
+.navbar-brand{
+	font-size: 30px;
+	color: white;
+	padding-top: 10px;
+}
+.nav-link{
+	flex: 1;
+	text-align: right;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+.nav-link ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-link ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+.nav-link ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background:#f44336;
+	display: block;
+	margin: auto;
+	transition:0.5s;
+}
+.nav-link ul li:hover::after{
+	width: 100%;	
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 60px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 15px;
+	color: #fff;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover {
+	border: 1px solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+
+
+/* -----COURSE----- */
+ .course{
+ width: 80%;
+ margin: auto;
+ text-align: center;
+ padding-top: 100px;
+ }
+ h1{
+ font-size: 36px;
+ font-weight: 600;
+ }
+ p{
+ color: #777;
+ font-weight: 300;
+ font-size: 14px;
+ line-height: 22px;
+ padding: 10px;
+ }
+ .row{
+ display: flex;
+ justify-content: space-between;
+ }
+.card{
+	flex-basis: 31%;	
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h5{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.card:hover{
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+
+/* -----CONTACT----- */
+.contact{
+	margin: 100px auto;
+	width: 80%;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 100px 0;
+}
+.contact h1{
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+	
+}
+ 
+ 
+ 
+ 
+ 
+/* -----FOOTER----- */ 
+ .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+
+
+/* -----SUB-FOOTER----- */
+a:hover{
+    text-decoration:none;
+}
+.section-padding {
+	padding: 10px 0;
+}
+.bottom {
+    background-color: #0a1c2e;
+}
+.bottom .copyright {
+    color: #e5e5e5;
+    font-weight: 600;
+}
+.copyright a {
+    color: #f2ff49;
+    margin-left: 3px;
+    padding-right: 20px;
+}
+.bottom p {
+    margin-bottom: 0;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.copyright p span {
+    color: #d1caca;
+}
+.bottom .copyright p, .bottom .copyright a:hover{
+    color: #6c6d83;
+    cursor: pointer;
+}
